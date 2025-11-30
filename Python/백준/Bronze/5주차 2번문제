@@ -1,0 +1,12 @@
+n = int(input())
+p = list(map(int, input().split()))
+p.sort()
+
+total_sum = 0
+wait_time = 0
+
+for time in p:
+    wait_time += time
+    total_sum += wait_time
+
+print(total_sum)
