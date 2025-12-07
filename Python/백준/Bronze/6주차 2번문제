@@ -1,0 +1,17 @@
+ans = [input() for _ in range(3)]
+
+target = 0
+
+for i in range(3):
+    if ans[i].isdigit():
+        target = int(ans[i]) + (3 - i)
+        break
+        
+if target % 3 == 0 and target % 5 == 0:
+    print("FizzBuzz")
+elif target % 3 == 0:
+    print("Fizz")
+elif target % 5 == 0:
+    print("Buzz")
+else:
+    print(target)
